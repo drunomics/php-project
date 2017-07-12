@@ -1,0 +1,8 @@
+name: php-project
+git:
+  url: 'git@bitbucket.org:drunomics/php-project.git'
+description: 'Describe your application.'
+commands:
+  build: |
+    composer install --no-dev --no-interaction
+    
