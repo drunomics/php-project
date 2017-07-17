@@ -1,5 +1,6 @@
 {
   "name": "drunomics/php-project",
   "description": "A Phapp-enabled project template for any kind of PHP app.",
+  "license": "MIT",
   "type": "project"
 }

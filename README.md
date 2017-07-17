@@ -4,7 +4,7 @@
 
 * Get and install the Phapp CLI, see https://github.com/drunomics/phapp-cli.
 
-* Run `phapp create myproject --template=drunomics/php`
+* Run `phapp create myproject --template=drunomics/php-project`
 
 * Edit `phapp.yml` and fill-in your project's attributes.
 
