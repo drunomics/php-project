@@ -6,6 +6,8 @@
 
 * Run `phapp create myproject --template=drunomics/php`
 
+* Edit `phapp.yml` and fill-in your project's attributes.
+
 * The project is prepared with a basic `.build-gitignore` file that includes the
   composer generated vendor directory into builds. Run `phapp build BRANCH` to
   build a branch.
