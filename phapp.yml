@@ -1,7 +1,0 @@
-name: php-project
-git:
-  url: 'git@github.com:drunomics/php-project.git'
-description: 'A Phapp-enabled project template for any kind of PHP app.'
-commands:
-  build: |
-    composer install --no-dev --no-interaction
