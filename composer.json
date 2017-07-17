@@ -1,1 +1,5 @@
-{}
+{
+  "name": "drunomics/php-project",
+  "description": "A Phapp-enabled project template for any kind of PHP app.",
+  "type": "project"
+}
