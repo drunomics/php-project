@@ -1,0 +1,60 @@
+# {{ project }}
+developed by drunomics GmbH, office@drunomics.com
+
+This project is maintained using composer and [phapp](http://github.com/drunomics/phapp-cli).
+
+## Project setup
+
+ * Run some webserver (not covered here)
+ * Initialize settings.php and dotenv:
+   ```
+   composer install
+   ./vendor/bin/phapp setup local
+   ```
+
+## Command line tools
+
+### Phapp
+Version 0.6.5 or later is required. Either install it globally and run `phapp`
+or execute the embedded phapp version from the root repository directory:
+
+```./vendor/bin/phapp ```
+
+*Note*:
+If phapp is not installed globally, `./vendor/bin/phapp` must be used instead of
+just `phapp` always.
+
+Refer to [the project page](http://github.com/drunomics/phapp-cli) for
+instructions on how to install phapp globally.
+
+## Useful commands
+
+- Commands for setting up or updating the project:
+
+```
+# Initialize the setup.
+phapp setup local
+
+# Initialize the application, after building it:
+phapp init
+
+# Update the build and run updates after switching branches:
+phapp update
+
+# Install from scratch.
+phapp install
+```
+
+If the build has been run and one wants to skip building again during
+init or update, one can pass the --no-build option like so:
+
+```
+phapp build
+phapp init --no-build
+phapp update --no-build
+```
+
+The commands executed can be found in `phapp.yml`.
+
+*Note*: If phapp is not installed globally or missing, refer to the "Phapp"
+section under "Command line tools" above.

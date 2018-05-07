@@ -2,5 +2,18 @@
   "name": "drunomics/php-project",
   "description": "A Phapp-enabled project template for any kind of PHP app.",
   "license": "MIT",
-  "type": "project"
+  "type": "project",
+  "scripts": {
+    "process-replacements": "php scripts/composer/process-replacements.php",
+    "install-phar-tools": "drunomics\\Composer\\PharInstaller::installPharTools",
+    "post-root-package-install": [
+      "rm README.md && mv README.md.dist README.md",
+      "@process-replacements"
+    ],
+    "post-install-cmd": "@install-phar-tools",
+    "post-update-cmd": "@install-phar-tools",
+    "clean": [
+      "drunomics\\Composer\\CleanCommand::runCommand"
+    ]
+  }
 }
